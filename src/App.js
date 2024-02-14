@@ -3,9 +3,10 @@ import SendIcon from "@mui/icons-material/Send";
 import { Button, styled } from "@mui/material";
 import { Typography } from "@mui/material";
 import "./App.css";
+import { theme } from "./theme";
 
 function App() {
-  const BlueButton = styled(Button)({
+  const BlueButton = styled(Button)(({ theme }) => ({
     backgroundColor: "dodgerblue",
     color: "white",
     margin: 5,
@@ -15,8 +16,8 @@ function App() {
     "&:disabled": {
       backgroundColor: "gray",
       color: "white",
-    }
-  })
+    },
+  }));
   return (
     <div>
       <p>app works!</p>
@@ -80,9 +81,7 @@ function App() {
         >
           my unique button
         </Button>
-        <BlueButton>
-          my blue button
-        </BlueButton>
+        <BlueButton>my blue button</BlueButton>
       </div>
     </div>
   );
