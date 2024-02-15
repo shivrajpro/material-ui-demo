@@ -1,0 +1,1 @@
+1. stack should be added inside the box not in styled component
