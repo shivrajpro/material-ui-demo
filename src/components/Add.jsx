@@ -42,7 +42,7 @@ const Add = () => {
       <Tooltip
         onClick={handleOpen}
         title="Add"
-        sx={{ position: "fixed", bottom: 20, left: { xs: "calc(50% - 25px)" } }}
+        sx={{ position: "fixed", bottom: 20, left: { xs: "10px" } }}
       >
         <Fab color="primary" aria-label="add">
           <AddIcon />
@@ -54,7 +54,7 @@ const Add = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box width={400} height={300} p={3} bgcolor="white" borderRadius={5}>
+        <Box width={400} height={300} p={3} bgcolor={"background.default"} color={"text.primary"} borderRadius={5}>
           <Typography variant="h6" color="gray" textAlign="center">
             Create Post
           </Typography>
