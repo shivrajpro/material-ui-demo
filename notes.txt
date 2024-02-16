@@ -1,1 +1,6 @@
 1. stack should be added inside the box not in styled component
+
+steps to host on github pages
+    npm i gh-pages --save-dev
+    homepage key in package json with repo url
+    predeploy, deploy
